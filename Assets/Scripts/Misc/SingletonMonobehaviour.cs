@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace FarmerIdle.Misc
 {
-    public class SingletonMonobehaviour<T> : MonoBehaviour where T : MonoBehaviour
+    public abstract class SingletonMonobehaviour<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T instance;
         public static T Instance => instance;
